@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+   
+    
+}
+
+/* for making the box the upper layer if yoy don't understand justc ommentout */
+#navbar::before{
+    content: "";
+   background-color: black;
+   position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    z-index: -1;
+}
+/* Navigation bar logo and iamge */
+#logo img{
+    height: 100px;
+    margin: 14px 35px;
+
+}
+/* Navigation bar list styling in horizontal*/
+ #navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+    
+}
+/* for hidding the circle infront of navigation bar*/
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem; 
+}
+/*for giving the space in navigation bar*/
+/* text decoration is use for hidethe undreline */
+
+#navbar ul li a{
+    color: white;
+    display :block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+/* when we place the cursor in home the color will change*/
+#navbar ul li a:hover{
+    color: black;
+   background-color: white;  
+}
+/* ---------we end the navigation portion--- */
+/*home section*/
+#Home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px 200px;
+    justify-content: center;
+    height: 500px;
+    font-size: 1.1rem;
+    color:  white;
+}
+#Home::before{
+    content: "";
+   background:url(pizza-6478478_1920.jpg) ;
+   position: absolute;
+    height: 138%;
+    width: 100%;
+    opacity: 4;
+    z-index: -1;
+    ;
+}
+#Home h1{
+    color: rgb(202, 191, 191);
+    text-align: centre;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.5rem;
+    
+
+}
+/* section services*/
+#services{
+ margin: 10px ; 
+ display: flex; 
+
+}
+#services .box {
+   padding: 35px; 
+    margin: auto;
+    background-color: rgb(211, 196, 177);
+     border: 2px solid brown;
+     border-radius: 20px;
+
+}
+       
+    #services .box img{
+        height: 156px;
+        }
+       
+/*utillity  class*/
+.services-container .h-primary{
+    position: relative;
+    margin-top: 20%;
+}
+.h-primary{
+    padding: 12px;
+   font-size: 3rem;
+   font-family: 'Baloo Bhai 2', cursive;
+   
+}
+h-secondary{
+    font-size: 3.2rem;
+    padding: 12px;
+}
+/* order now button style */
+.btn{
+    font-size: 1.5rem;
+    margin: 17px;
+    color: white;
+    border: 2px solid white;
+    padding: 6px 20px;
+    background-color: rgb(49, 13, 13);
+    border-radius: 19px;
+    cursor: pointer;/*for making the cursing hand in on order now  */
+}
+.centre{
+     text-align: center;
+}
+/* client section*/
+   #client-section{
+    height: 344px;
+    background-color: rgb(244, 229, 229);
+   
+     } 
+      
+         
+
+ #clients {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+ }  
+ .client-item{
+     padding: 34px;
+ }
+ #clients img {
+    height: 130px;
+     
+  }  
+ /* contact  section */
+ #contact {
+     position: relative;
+ }
+ #contact::before{
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     opacity: 0.4;
+     background:url(contact-us-2993000_1920.jpg)no-repeat center center/cover ;
+ }
+ #contact{
+     position: relative;
+ }
+  footer{
+    padding: 9px 20px;
+     background-color: black;
+     color: white;
+ }
+ /* contact box*/
+ #contact box input{
+  width: 100%;
+ }
+ #contact-box form{
+   width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+ }
+ #contact-box textarea{
+width: 100%;
+padding: 0.5rem;
+border-radius: 19px;
+font-size: 1.1rem;
+}
+#contact-box {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 34px;
+}
+ .center{
+     text-align: center;
+ }
